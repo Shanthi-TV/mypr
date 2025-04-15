@@ -135,8 +135,7 @@ runs:
         
           # Checking if previous deployment exists
           if [  "$deployment_exists" = false ]; then
-            echo "Provisioning environment..." 
-            azd env set AZURE_PRINCIPAL_TYPE 'ServicePrincipal'    
+            echo "Provisioning environment..."  
             azd provision --no-prompt
           fi
 
